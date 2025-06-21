@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: avshop-main-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: BOT_TOKEN
+        value: 7257034501:AAHmfA3k4Vv3_uqdLmhQGA05vyWStfU1_Qg
+  
+  - type: web
+    name: avshop-support-bot
+    env: node
+    buildCommand: npm install
+    startCommand: node support-bot.js
